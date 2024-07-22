@@ -1,0 +1,26 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/related-content",
+	"version": "0.1.0",
+	"title": "Related Content",
+	"category": "widgets",
+	"icon": "megaphone",
+	"description": "Display related Stories, Events or Contributors",
+	"example": {},
+	"attributes": {
+		"contentType":{
+			"type":"string"
+		}
+	},
+	"supports": {
+		"html": false,
+		"align": ["full"]
+	},
+	"textdomain": "related-content",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}
