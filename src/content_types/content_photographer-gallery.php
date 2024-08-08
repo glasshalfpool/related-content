@@ -37,7 +37,7 @@
 
         <div class="related-content photgrapher-gallery-container">
 
-            <h2>Collaborators</h2>
+            
             <?php foreach( $contributors as $contributor ) : setup_postdata($contributor); ?>
                 <?php                     
                     $display_title = get_the_title( $contributor ); 
@@ -47,26 +47,10 @@
                     $contributor_role = get_field('contributor_role', $contributor);
                     $images = get_field('photographer_gallery', $contributor);
                 ?>
-                <ul>
-                    <li>
-                        <?php if( !empty( $display_thumbail ) ) : ?>
-                            <figure>
-                                <a href="<?php echo $display_permalink; ?>">
-                                    <?php echo $display_thumbail; ?>
-                                </a>
-                            </figure>
-                        <?php endif; ?>
-                        <h3>
-                            <a class="contributor-title-link" href="<?php echo $display_permalink; ?>">
-                                <?php echo $display_title; ?>
-                            </a>
-                        </h3>
-                        <p class="contributor-role"><?php echo $contributor_role; ?></p>
-                        <p class="related-post-excerpt"><?php echo $display_excerpt; ?></p>
-                        <a class="contributor-read-more-link" href="<?php echo $display_permalink; ?>">Read more &rarr;</a>
-                    </li>
-                </ul>
+                
+                
                 <div class="photographer-swiper-container">
+                    <h3>Photography Gallery</h3>
                     <div class="swiper-control-arrows">                    
                         <div class="custom-swiper-button-prev">&#8592;</div>
                         <div class="custom-swiper-button-next">&#8594;</div>                    

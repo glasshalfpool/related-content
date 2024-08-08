@@ -59,7 +59,7 @@ function enqueue_related_content_styles() {
 
     .swiper-slide {      
       max-height: 100vh;
-      max-width: 100%;
+      max-width: 90%;
     }    
 
     .swiper-slide-image-container {
@@ -89,6 +89,7 @@ function enqueue_related_content_styles() {
       cursor: pointer;
       display: flex;
       justify-content: right;
+      font-size: var(--wp--preset--font-size--medium);
     }
 
     .swiper-control-arrows .swiper-button-disabled {
