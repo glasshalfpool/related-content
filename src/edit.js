@@ -48,7 +48,9 @@ export default function Edit({ attributes, setAttributes }) {
         contentDescription = 'Stories';
 	} else if (selectedContentType === "content-type-gallery") {
         contentDescription = 'Gallery';
-	}
+	} else if (selectedContentType === "content-type-story-carousel")  {
+        contentDescription = 'Story Carousel';
+    }
 
     return (
         <>					
@@ -61,7 +63,8 @@ export default function Edit({ attributes, setAttributes }) {
                             { label: 'Contributors', value: 'content-type-contributors' },
                             { label: 'Events', value: 'content-type-events' },
 							{ label: 'Stories', value: 'content-type-stories' },
-                            { label: 'Photographer Gallery', value: 'content-type-gallery'}
+                            { label: 'Photographer Gallery', value: 'content-type-gallery'},
+                            { label: 'Story Carousel', value: 'content-type-story-carousel'}
                         ]}
                         onChange={(newcontentType) => setselectedContentType(newcontentType)}
                     />
