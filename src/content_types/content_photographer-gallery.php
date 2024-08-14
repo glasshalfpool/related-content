@@ -50,7 +50,7 @@
                 
                 
                 <div class="photographer-swiper-container">
-                    <h3>Photography Gallery</h3>
+                    <h2>Photography Gallery</h2>
                     <div class="swiper-control-arrows">                    
                         <div class="custom-swiper-button-prev">&#8592;</div>
                         <div class="custom-swiper-button-next">&#8594;</div>                    
@@ -81,7 +81,7 @@
 <script>
   var swiper = new Swiper(".mySwiper", {
     slidesPerView: "auto",
-    spaceBetween: 30,
+    spaceBetween: 10,
     navigation: {
         nextEl: ".custom-swiper-button-next",
         prevEl: ".custom-swiper-button-prev",
