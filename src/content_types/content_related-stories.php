@@ -1,4 +1,4 @@
-<?php if ($post_type === 'event') {
+<?php if (($post_type === 'event') || ($post_type === 'post')) {
     
     $post_id = get_the_ID();
     $stories = get_post_meta( $post_id, 'related_stories', true );
@@ -31,7 +31,7 @@
         
 <?php else : ?>
 
-    <div class="related-content-section <?php echo $checkContentType ?>">
+    <div id="related-stories" class="related-content-section <?php echo $checkContentType ?>">
         <div class="related-content related-stories-container">
             
             <ul>

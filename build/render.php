@@ -22,6 +22,8 @@
 			include("content_types/content_photographer-gallery.php");
 		} else if ($checkContentType == 'content-type-story-carousel') {
 			include("content_types/content_story-carousel.php");
+		} else if ($checkContentType == 'content-type-posts') {
+			include ("content_types/content_related-posts.php");
 		}
 	?>
 	

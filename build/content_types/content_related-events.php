@@ -31,7 +31,7 @@
         
 <?php else : ?>
 
-    <div class="related-content-section <?php echo $checkContentType ?>">
+    <div id="related-events" class="related-content-section <?php echo $checkContentType ?>">
 
         <div class="related-content related-events-container">
     

@@ -44,6 +44,8 @@ export default function Edit({ attributes, setAttributes }) {
         contentDescription = 'Contributors';
     } else if (selectedContentType === "content-type-events") {
         contentDescription = 'Events';
+    } else if (selectedContentType === "content-type-posts") {
+        contentDescription = 'Posts';
     } else if (selectedContentType === "content-type-stories") {
         contentDescription = 'Stories';
 	} else if (selectedContentType === "content-type-gallery") {
@@ -62,6 +64,7 @@ export default function Edit({ attributes, setAttributes }) {
                         options={[
                             { label: 'Contributors', value: 'content-type-contributors' },
                             { label: 'Events', value: 'content-type-events' },
+                            { label: 'Posts', value: 'content-type-posts' },
 							{ label: 'Stories', value: 'content-type-stories' },
                             { label: 'Photographer Gallery', value: 'content-type-gallery'},
                             { label: 'Story Carousel', value: 'content-type-story-carousel'}

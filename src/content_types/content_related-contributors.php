@@ -18,7 +18,7 @@
     
 <?php else : ?>
 
-    <div class="related-content-section <?php echo $checkContentType ?>">
+    <div id="related-contributors" class="related-content-section <?php echo $checkContentType ?>">
 
         <div class="related-content related-contributors-container">
 
@@ -46,7 +46,15 @@
                             </a>
                         </h3>
                         <p class="contributor-role"><?php echo $contributor_role; ?></p>
-                        <p class="related-post-excerpt"><?php echo $display_excerpt; ?></p>
+                        <p class="related-post-excerpt">
+                            <?php
+                                $max_length = 80; // Set your desired character limit here
+                                if (strlen($display_excerpt) > $max_length) {
+                                    $display_excerpt = substr($display_excerpt, 0, $max_length) . '...';
+                                }
+                                echo $display_excerpt;
+                            ?>
+                        </p>
                         <a class="contributor-read-more-link" href="<?php echo $display_permalink; ?>">Read more &rarr;</a>
                     </li>
                 <?php endforeach; ?>
